@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<UseRazorSourceGenerator>false</UseRazorSourceGenerator>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.2" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\GLAB.App\GLAB.App.csproj" />
+		<ProjectReference Include="..\GLAB.Domains\GLAB.Domains.csproj" />
+		<ProjectReference Include="..\GLAB.Implementation\GLAB.Implementation.csproj" />
+		<ProjectReference Include="..\GLAB.Ui\GLAB.Ui.csproj" />
+	</ItemGroup>
+
+
+</Project>
